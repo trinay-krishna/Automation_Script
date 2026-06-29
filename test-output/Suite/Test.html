@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 29 21:25:27 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>117 seconds (117047 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.cognizant.testscripts.TC022_RentBoundaryValue.TC022_Rent_Boundary_Value()'><b>TC022_Rent_Boundary_Value</b><br>Test class: com.cognizant.testscripts.TC022_RentBoundaryValue<br/>
+<a href="#Output-1744190758" onClick='toggleBox("Output-1744190758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744190758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744190758">
+Known defect observed for rent -1. Actual message is not expected/user-friendly. Actual: Please fill all required (*) fields.<br/>
+Known defect observed for rent 9999999999. Actual message is not expected/user-friendly. Actual: could not execute statement [Data truncation: Out of range value for column 'rent_amount' at row 1] [insert into postings (available_beds,created_at,expires_at,food_rating,food_review,locality_and_landmark,needs_reconfirmation,office_campus,pg_name,posted_by_user_id,reminder_sent,rent_amount,service_rating,service_review,sharing_type,status,tenant_preference,total_beds) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into postings (available_beds,created_at,expires_at,food_rating,food_review,locality_and_landmark,needs_reconfirmation,office_campus,pg_name,posted_by_user_id,reminder_sent,rent_amount,service_rating,service_review,sharing_type,status,tenant_preference,total_beds) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>com.cognizant.testscripts.TC022_RentBoundaryValue@752325ad</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC021_UploadedImageCount.TC021_Uploaded_Image_Count()'><b>TC021_Uploaded_Image_Count</b><br>Test class: com.cognizant.testscripts.TC021_UploadedImageCount</td>
+<td></td>
+<td>4</td>
+<td>com.cognizant.testscripts.TC021_UploadedImageCount@45c7e403</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC020_RemoveUploadedPhoto.TC020_Remove_Uploaded_Photo()'><b>TC020_Remove_Uploaded_Photo</b><br>Test class: com.cognizant.testscripts.TC020_RemoveUploadedPhoto</td>
+<td></td>
+<td>1</td>
+<td>com.cognizant.testscripts.TC020_RemoveUploadedPhoto@2925bf5b</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC023_CreatedListingCard.TC023_Created_Listing_Card()'><b>TC023_Created_Listing_Card</b><br>Test class: com.cognizant.testscripts.TC023_CreatedListingCard</td>
+<td></td>
+<td>12</td>
+<td>com.cognizant.testscripts.TC023_CreatedListingCard@279fedbd</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails.TC017_Create_Listing_With_Mandatory_Details()'><b>TC017_Create_Listing_With_Mandatory_Details</b><br>Test class: com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails<br>Parameters: TC018, Test PG No Photo, Near Navalur, Chennai, Siruseri, Double (2 beds), 1 of 2, Co-Living PG (anyone), 8000, 5, 5, Very good., Very good.</td>
+<td></td>
+<td>11</td>
+<td>com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails@710f4dc7</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC018_ListingWithoutPhotos.TC018_Listing_Without_Photos()'><b>TC018_Listing_Without_Photos</b><br>Test class: com.cognizant.testscripts.TC018_ListingWithoutPhotos</td>
+<td></td>
+<td>12</td>
+<td>com.cognizant.testscripts.TC018_ListingWithoutPhotos@b3ca52e</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC019_CandidateListingCreation.TC019_Candidate_Listing_Creation()'><b>TC019_Candidate_Listing_Creation</b><br>Test class: com.cognizant.testscripts.TC019_CandidateListingCreation</td>
+<td></td>
+<td>13</td>
+<td>com.cognizant.testscripts.TC019_CandidateListingCreation@7a8c8dcf</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails.TC017_Create_Listing_With_Mandatory_Details()'><b>TC017_Create_Listing_With_Mandatory_Details</b><br>Test class: com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails<br>Parameters: TC017, Test PG, Near Navalur, Chennai, Siruseri, Double (2 beds), 1 of 2, Co-Living PG (anyone), 8000, 5, 5, Very good., Very good.</td>
+<td></td>
+<td>11</td>
+<td>com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails@710f4dc7</td></tr>
+<tr>
+<td title='com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails.TC017_Create_Listing_With_Mandatory_Details()'><b>TC017_Create_Listing_With_Mandatory_Details</b><br>Test class: com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails<br>Parameters: TC017_ALT, Lake View PG, Near SIPCOT, Chennai, Sholinganallur, Triple (3 beds), 2 of 3, Co-Living PG (anyone), 9500, 4, 5, Food is good., Service is prompt.</td>
+<td></td>
+<td>12</td>
+<td>com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails@710f4dc7</td></tr>
+</table><p>
+</body>
+</html>

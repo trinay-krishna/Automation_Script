@@ -8,89 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">99,551</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">117,047</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.cognizant.testscripts.TCListRoom</td><td><a href="#m0">TC019_Candidate_Listing_Creation</a></td><td rowspan="1">1782736476353</td><td rowspan="1">15947</td></tr><tr class="failedeven"><td><a href="#m1">TC022_Rent_Boundary_Value</a></td><td rowspan="1">1782736507780</td><td rowspan="1">13049</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">com.cognizant.testscripts.TCListRoom</td><td><a href="#m2">TC018_Listing_Without_Photos</a></td><td rowspan="1">1782736466577</td><td rowspan="1">8322</td></tr><tr class="passedeven"><td><a href="#m3">TC020_Remove_Uploaded_Photo</a></td><td rowspan="1">1782736493305</td><td rowspan="1">6525</td></tr><tr class="passedeven"><td><a href="#m4">TC021_Uploaded_Image_Count</a></td><td rowspan="1">1782736501003</td><td rowspan="1">5426</td></tr><tr class="passedeven"><td><a href="#m5">TC023_Created_Listing_Card</a></td><td rowspan="1">1782736521634</td><td rowspan="1">3428</td></tr><tr class="passedeven"><td><a href="#m6">createListingWithMandatoryDetails</a></td><td rowspan="3">1782736530196</td><td rowspan="3">2669</td></tr><tr class="passedeven"><td><a href="#m7">createListingWithMandatoryDetails</a></td></tr><tr class="passedeven"><td><a href="#m8">createListingWithMandatoryDetails</a></td></tr><tr class="passedeven"><td><a href="#m9">verifyCreatedListingInMyListings</a></td><td rowspan="1">1782736537193</td><td rowspan="1">718</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails</td><td><a href="#m0">TC017_Create_Listing_With_Mandatory_Details</a></td><td rowspan="3">1782748619566</td><td rowspan="3">11948</td></tr><tr class="passedeven"><td><a href="#m1">TC017_Create_Listing_With_Mandatory_Details</a></td></tr><tr class="passedeven"><td><a href="#m2">TC017_Create_Listing_With_Mandatory_Details</a></td></tr><tr class="passedodd"><td rowspan="1">com.cognizant.testscripts.TC018_ListingWithoutPhotos</td><td><a href="#m3">TC018_Listing_Without_Photos</a></td><td rowspan="1">1782748586063</td><td rowspan="1">12336</td></tr><tr class="passedeven"><td rowspan="1">com.cognizant.testscripts.TC019_CandidateListingCreation</td><td><a href="#m4">TC019_Candidate_Listing_Creation</a></td><td rowspan="1">1782748529689</td><td rowspan="1">13004</td></tr><tr class="passedodd"><td rowspan="1">com.cognizant.testscripts.TC020_RemoveUploadedPhoto</td><td><a href="#m5">TC020_Remove_Uploaded_Photo</a></td><td rowspan="1">1782748603727</td><td rowspan="1">1808</td></tr><tr class="passedeven"><td rowspan="1">com.cognizant.testscripts.TC021_UploadedImageCount</td><td><a href="#m6">TC021_Uploaded_Image_Count</a></td><td rowspan="1">1782748599041</td><td rowspan="1">4133</td></tr><tr class="passedodd"><td rowspan="1">com.cognizant.testscripts.TC022_RentBoundaryValue</td><td><a href="#m7">TC022_Rent_Boundary_Value</a></td><td rowspan="1">1782748543642</td><td rowspan="1">28617</td></tr><tr class="passedeven"><td rowspan="1">com.cognizant.testscripts.TC023_CreatedListingCard</td><td><a href="#m8">TC023_Created_Listing_Card</a></td><td rowspan="1">1782748573133</td><td rowspan="1">12182</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.cognizant.testscripts.TCListRoom#TC019_Candidate_Listing_Creation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;/my-listings&quot;. Current url: &quot;http://localhost:4200/create-listing&quot;
-(tried for 10 seconds with 500 milliseconds interval)
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.103, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\2492381\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50971}, goog:processID: 115528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50971/devtoo..., se:cdpVersion: 149.0.7827.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c292ef1c93ddfb02a84f576ff9d672f1
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:233)
-	at com.cognizant.testscripts.TCListRoom.publishAndWaitForMyListings(TCListRoom.java:115)
-	at com.cognizant.testscripts.TCListRoom.TC019_Candidate_Listing_Creation(TCListRoom.java:235)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.cognizant.testscripts.TCListRoom#TC022_Rent_Boundary_Value</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	Invalid rent -1 should show a proper rent validation message, not generic required-fields error. Actual: Please fill all required (*) fields. expected [false] but found [true],
-	Invalid rent 9999999999 should not expose SQL error. Actual: could not execute statement [Data truncation: Out of range value for column &apos;rent_amount&apos; at row 1] [insert into postings (available_beds,created_at,expires_at,food_rating,food_review,locality_and_landmark,needs_reconfirmation,office_campus,pg_name,posted_by_user_id,reminder_sent,rent_amount,service_rating,service_review,sharing_type,status,tenant_preference,total_beds) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into postings (available_beds,created_at,expires_at,food_rating,food_review,locality_and_landmark,needs_reconfirmation,office_campus,pg_name,posted_by_user_id,reminder_sent,rent_amount,service_rating,service_review,sharing_type,status,tenant_preference,total_beds) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)] expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-	at com.cognizant.testscripts.TCListRoom.TC022_Rent_Boundary_Value(TCListRoom.java:305)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.cognizant.testscripts.TCListRoom#TC018_Listing_Without_Photos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.cognizant.testscripts.TCListRoom#TC020_Remove_Uploaded_Photo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.cognizant.testscripts.TCListRoom#TC021_Uploaded_Image_Count</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.cognizant.testscripts.TCListRoom#TC023_Created_Listing_Card</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.cognizant.testscripts.TCListRoom#createListingWithMandatoryDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>TC018</td><td>Test PG No Photo</td><td>Near Navalur</td><td>Chennai</td><td>Siruseri</td><td>Double (2 beds)</td><td>1 of 2</td><td>Co-Living PG (anyone)</td><td>8000</td><td>5</td><td>5</td><td>Very good.</td><td>Very good.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.cognizant.testscripts.TCListRoom#createListingWithMandatoryDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>TC017</td><td>Test PG</td><td>Near Navalur</td><td>Chennai</td><td>Siruseri</td><td>Double (2 beds)</td><td>1 of 2</td><td>Co-Living PG (anyone)</td><td>8000</td><td>5</td><td>5</td><td>Very good.</td><td>Very good.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.cognizant.testscripts.TCListRoom#createListingWithMandatoryDetails</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>TC017_ALT</td><td>Lake View PG</td><td>Near SIPCOT</td><td>Chennai</td><td>Sholinganallur</td><td>Triple (3 beds)</td><td>2 of 3</td><td>Co-Living PG (anyone)</td><td>9500</td><td>4</td><td>5</td><td>Food is good.</td><td>Service is prompt.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.cognizant.testscripts.TCListRoom#verifyCreatedListingInMyListings</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails#TC017_Create_Listing_With_Mandatory_Details</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>TC018</td><td>Test PG No Photo</td><td>Near Navalur</td><td>Chennai</td><td>Siruseri</td><td>Double (2 beds)</td><td>1 of 2</td><td>Co-Living PG (anyone)</td><td>8000</td><td>5</td><td>5</td><td>Very good.</td><td>Very good.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails#TC017_Create_Listing_With_Mandatory_Details</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>TC017</td><td>Test PG</td><td>Near Navalur</td><td>Chennai</td><td>Siruseri</td><td>Double (2 beds)</td><td>1 of 2</td><td>Co-Living PG (anyone)</td><td>8000</td><td>5</td><td>5</td><td>Very good.</td><td>Very good.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails#TC017_Create_Listing_With_Mandatory_Details</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th></tr><tr class="param stripe"><td>TC017_ALT</td><td>Lake View PG</td><td>Near SIPCOT</td><td>Chennai</td><td>Sholinganallur</td><td>Triple (3 beds)</td><td>2 of 3</td><td>Co-Living PG (anyone)</td><td>9500</td><td>4</td><td>5</td><td>Food is good.</td><td>Service is prompt.</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.cognizant.testscripts.TC018_ListingWithoutPhotos#TC018_Listing_Without_Photos</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.cognizant.testscripts.TC019_CandidateListingCreation#TC019_Candidate_Listing_Creation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.cognizant.testscripts.TC020_RemoveUploadedPhoto#TC020_Remove_Uploaded_Photo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.cognizant.testscripts.TC021_UploadedImageCount#TC021_Uploaded_Image_Count</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.cognizant.testscripts.TC022_RentBoundaryValue#TC022_Rent_Boundary_Value</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Known defect observed for rent -1. Actual message is not expected/user-friendly. Actual: Please fill all required (*) fields.<br/>Known defect observed for rent 9999999999. Actual message is not expected/user-friendly. Actual: could not execute statement [Data truncation: Out of range value for column 'rent_amount' at row 1] [insert into postings (available_beds,created_at,expires_at,food_rating,food_review,locality_and_landmark,needs_reconfirmation,office_campus,pg_name,posted_by_user_id,reminder_sent,rent_amount,service_rating,service_review,sharing_type,status,tenant_preference,total_beds) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]; SQL [insert into postings (available_beds,created_at,expires_at,food_rating,food_review,locality_and_landmark,needs_reconfirmation,office_campus,pg_name,posted_by_user_id,reminder_sent,rent_amount,service_rating,service_review,sharing_type,status,tenant_preference,total_beds) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)]</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.cognizant.testscripts.TC023_CreatedListingCard#TC023_Created_Listing_Card</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

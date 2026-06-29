@@ -1,18 +1,22 @@
 package com.cognizant.base;
 
+import java.lang.reflect.Method;
 import java.time.Duration;
+import java.util.Arrays;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
+import org.testng.SkipException;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import com.cognizant.elementrepository.HomePage;
 import com.cognizant.elementrepository.LoginPage;
@@ -29,7 +33,7 @@ public class BaseClass implements FrameworkConstants {
 	public HomePage homePage;
 
 	@Parameters("browser")
-	@BeforeClass(alwaysRun = true)
+	@BeforeSuite(alwaysRun = true)
 	public void openTheBrowser(@Optional("chrome") String browserName) {
 		if (browserName.equalsIgnoreCase("chrome")) {
 
@@ -48,25 +52,47 @@ public class BaseClass implements FrameworkConstants {
 	
 
 	@BeforeMethod(alwaysRun = true)
-	public void loginToApplication() {
+	public void loginToApplication(Method method) {
+		homePage = null;
 		readFromPropertyFile = new PropertyFileReader();
-		String url = readFromPropertyFile.getValueProperty("url");
-		String username = readFromPropertyFile.getValueProperty("username");
-		String password = readFromPropertyFile.getValueProperty("password");
+		String url = readFromPropertyFile.getValueProperty("url").replaceAll("/$", "");
+		String usernameKey = "username";
+		String passwordKey = "password";
+
+		Test testAnnotation = method.getAnnotation(Test.class);
+		if (testAnnotation != null && Arrays.asList(testAnnotation.groups()).contains("candidate")) {
+			usernameKey = "candidateUsername";
+			passwordKey = "candidatePassword";
+		}
+
+		String username = readFromPropertyFile.getValueProperty(usernameKey);
+		String password = readFromPropertyFile.getValueProperty(passwordKey);
+
+		if (isBlank(username) || isBlank(password)) {
+			throw new SkipException("Credentials are missing for keys: " + usernameKey + " / " + passwordKey);
+		}
 
 		driver.get(url + "/login");
 		loginPage = new LoginPage(driver);
 		homePage = loginPage.login(username, password);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void logoutOfApplication() {
-		homePage.logout();
+	private boolean isBlank(String value) {
+		return value == null || value.trim().isEmpty();
 	}
 
-	@AfterClass(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
+	public void logoutOfApplication() {
+		if (homePage != null) {
+			homePage.logout();
+		}
+	}
+
+	@AfterSuite(alwaysRun = true)
 	public void closeTheBrowser() {
-		driver.quit();
+		if (driver != null) {
+			driver.quit();
+		}
 	}
 
 }

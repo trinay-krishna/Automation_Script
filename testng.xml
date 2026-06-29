@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.cognizant.testscripts.TC019_CandidateListingCreation"/>
+      <class name="com.cognizant.testscripts.TC022_RentBoundaryValue"/>
+      <class name="com.cognizant.testscripts.TC023_CreatedListingCard"/>
+      <class name="com.cognizant.testscripts.TC018_ListingWithoutPhotos"/>
+      <class name="com.cognizant.testscripts.TC021_UploadedImageCount"/>
+      <class name="com.cognizant.testscripts.TC020_RemoveUploadedPhoto"/>
+      <class name="com.cognizant.testscripts.TC017_CreateListingWithMandatoryDetails"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
